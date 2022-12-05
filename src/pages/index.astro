@@ -1,5 +1,7 @@
 ---
 import '../styles/global.css';
+import Navigation from '../componets/Navigation.astro';
+import Footer from '../componets/Footer.astro';
 
 const titlePage = "Home Page";
 ---
@@ -13,13 +15,8 @@ const titlePage = "Home Page";
     <title>{titlePage}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog">Blog</a>
-
+    <Navigation />
     <h1>{titlePage}</h1>
-    <p>-- Rajah Wu</p>
-
-   
+	<Footer />
   </body>
 </html>

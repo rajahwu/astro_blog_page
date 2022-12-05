@@ -1,8 +1,9 @@
 ---
-import '../styles/global.css';
+import "../styles/global.css";
+import Navigation from "../componets/Navigation.astro";
+import Footer from "../componets/Footer.astro";
 
 const blogPage = "My Astro Learning Blog";
-
 ---
 
 <html lang="en">
@@ -14,9 +15,7 @@ const blogPage = "My Astro Learning Blog";
     <title>{blogPage}</title>
   </head>
   <body>
-    <a href="/">Home</a>
-    <a href="/about/">About</a>
-    <a href="/blog">Blog</a>
+    <Navigation />
     <h1>{blogPage}</h1>
 
     <h2><a target="_blank" href="/posts/post-1/">Post One</a></h2>
@@ -25,7 +24,7 @@ const blogPage = "My Astro Learning Blog";
       corrupti, eaque consectetur sunt tempore.
     </p>
     <h2><a target="_blank" href="/posts/post-2/">Post Two</a></h2>
-    
+
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto animi
       corrupti, eaque consectetur sunt tempore.
@@ -35,5 +34,7 @@ const blogPage = "My Astro Learning Blog";
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto animi
       corrupti, eaque consectetur sunt tempore.
     </p>
+
+    <Footer />
   </body>
 </html>
