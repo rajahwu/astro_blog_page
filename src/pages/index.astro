@@ -1,16 +1,5 @@
 ---
 const titlePage = "Home Page";
-const identity = {
-  firstName: "Vincent",
-  country: "USA",
-  occupations: ["Web Developer", "Technical Writer"],
-  hobbies: ["martial arts", "doodling", "reading"],
-};
-const skills = ["HTML", "CSS", "JavaScript", "React", "Astro", "Writing Docs"];
-
-const happy = true;
-const finished = false;
-const goal = 3;
 ---
 
 <html lang="en">
@@ -29,39 +18,6 @@ const goal = 3;
     <h1>{titlePage}</h1>
     <p>-- Rajah Wu</p>
 
-    {happy && <p>I am happy to be learning Astro!</p>}
-
-    {finished && <p>I finished this tutorial!</p>}
-
-    {
-      goal === 3 ? (
-        <p>My goal is to finish in 3 days.</p>
-      ) : (
-        <p>My goal is not 3 days.</p>
-      )
-    }
-
-    <p>Here are a few facts about me:</p>
-    <ul>
-      <li>My name is {identity.firstName}.</li>
-      <li>
-        I live in the {identity.country} and I work as a {
-          identity.occupations[0]
-        } and {" "}
-        {identity.occupations[1]}.
-      </li>
-      {
-        identity.hobbies.length >= 2 && (
-          <li>
-            Two of my hobbies are: {identity.hobbies[0]} and{" "}
-            {identity.hobbies[1]}
-          </li>
-        )
-      }
-    </ul>
-    <p>My skills are:</p>
-    <ul>
-      {skills.map((skill) => <li>{skill}</li>)}
-    </ul>
+   
   </body>
 </html>
